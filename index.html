@@ -3,34 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <title>Mahi's Portfolio</title>
+        <style>
+            *{
+                background-color: rgb(60, 80, 80);
+                color: whitesmoke;
+            }
+            h1,h2,p{
+            text-align: center;
+            }
+            .container{
+                display:flex;
+                flex-wrap: wrap;
+                padding:10px;
+                margin: 100px;
+                align-items: center;
+                justify-content:center;
+                gap: 20px;
+            }
+
+            img{
+                border-radius:5%;
+            }
+
+        </style>
     </head>
 
     <body>
-        <h1>Mahi's portfolio</h1>
-        <h2>I'm a fresher web developer</h2>
+        <header>
+            <h1>Mahi's portfolio</h1>
+            <h2>I'm a fresher web developer</h2>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#me">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
         <hr/>
-        <h3><a href="./public/burgerorder.html">CUSTOMISED BURGER ORDERING PROJECT</a></h3>
-        <img src="./images/Screenshot 2024-07-25 184540.png" height="200" alt="BURGER PROJECT PREVIEW"/>
-        <h3><a href="./public/packinglist.html">PACKAGE LISTING PROJECT</a></h3>
-        <img src="images/Screenshot 2024-07-22 201322.png" height="200" alt="COMPANY PACKING LIST PREVIEW"/>
-        <h3><a href="./public/bear.html">BEAR INFORMATION PROJECT</a></h3>
-        <img src="images/Screenshot 2024-07-21 011119.png" height="200" alt="BEAR INFORMATION SITE PREVIEW"/>
-        <h3><a href="./public/Yoga_day_invite.html">YOGA DAY INVITE PROJECT</a></h3>
-        <img src="./images/Yoga_day_invite.html - Google Chrome 10-06-2024 17_27_20.png" height="200" alt="YOGA DAY INVITE PREVIEW"/>
-        <h3><a href="./public/birthday invite.html">BIRTHDAY INVITE PROJECT</a></h3>
-        <img src="./images/birthday invite.html - Google Chrome 10-06-2024 17_26_55.png" height="200" alt="BIRTHDAY INVITE PREVIEW"/>
-        <h3><a href="./public/gaming_websites.html">GAMING WEBSITE PROJECT</a></h3>
-        <img src="./images/gaming_websites.html - Google Chrome 10-06-2024 17_25_56.png" height="200" alt="GAMING WEBSITE PREVIEW"/>
-        <h3><a href="./public/searching_websites.html">SEARCHING SITES PROJECT</a></h3>
-        <img src="./images/searching_websites.html - Google Chrome 10-06-2024 17_26_15.png" height="200" alt="SEARCHING WEBSITE PREVIEW"/>
-        <h3><a href="./public/Recipe_book.html">CREATING A RECIPE BASED ON LISTS</a></h3>
-        <img src="./images/movie_ranker_project.html - Google Chrome 10-06-2024 17_25_30.png" height="200" alt="BASIC RECIPE BOOK WEBSITE PREVIEW"/>
-        <h3><a href="./public/movie_ranker_project.html">MOVIE RANKING PROJECT</a></h3>
-        <img src="./images/movie_ranker_project.html - Google Chrome 10-06-2024 17_24_59.png" height="200" alt="BASIC MOVIE RANKER PROJECT PREVIEW"/>
-        <h3><a href="./public/basic_notes_project.html">BASIC NOTES PROJECT</a></h3>
-        <img src="./images/basic_notes_project.html - Google Chrome 10-06-2024 17_23_57.png" height="200" alt="BASIC NOTES PROJECT PREVIEW"/>
+        <main id="projects">
+            <h2>HTML PROJECTS:</h2>
+            <p>Click on the images to get to different project pages!</p>
+            <div class="container">
+                <a href="./public/burgerorder.html">
+                    <img src="./images/Screenshot 2024-07-25 184540.png" height="200" alt="BURGER PROJECT PREVIEW"/>
+                </a>
+                <a href="./public/packinglist.html">
+                    <img src="images/Screenshot 2024-07-22 201322.png" height="200" alt="COMPANY PACKING LIST PREVIEW"/>
+                </a>
+                <a href="./public/bear.html">
+                    <img src="images/Screenshot 2024-07-21 011119.png" height="200" alt="BEAR INFORMATION SITE PREVIEW"/>
+                </a>
+                <a href="./public/Yoga_day_invite.html">
+                    <img src="./images/Yoga_day_invite.html - Google Chrome 10-06-2024 17_27_20.png" height="200" alt="YOGA DAY INVITE PREVIEW"/>
+                </a>
+                <a href="./public/birthday invite.html">
+                    <img src="./images/birthday invite.html - Google Chrome 10-06-2024 17_26_55.png" height="200" alt="BIRTHDAY INVITE PREVIEW"/>
+                </a>
+                <a href="./public/gaming_websites.html">
+                    <img src="./images/gaming_websites.html - Google Chrome 10-06-2024 17_25_56.png" height="200" alt="GAMING WEBSITE PREVIEW"/>
+                </a>
+                <a href="./public/searching_websites.html">
+                    <img src="./images/searching_websites.html - Google Chrome 10-06-2024 17_26_15.png" height="200" alt="SEARCHING WEBSITE PREVIEW"/>
+                </a>
+                <a href="./public/Recipe_book.html">
+                    <img src="./images/movie_ranker_project.html - Google Chrome 10-06-2024 17_25_30.png" height="200" alt="BASIC RECIPE BOOK WEBSITE PREVIEW"/>
+                </a>
+                <a href="./public/movie_ranker_project.html">
+                    <img src="./images/movie_ranker_project.html - Google Chrome 10-06-2024 17_24_59.png" height="200" alt="BASIC MOVIE RANKER PROJECT PREVIEW"/>
+                </a>
+                <a href="./public/basic_notes_project.html">
+                    <img src="./images/basic_notes_project.html - Google Chrome 10-06-2024 17_23_57.png" height="200" alt="BASIC NOTES PROJECT PREVIEW"/>
+                </a>
+            </div>
+        </main>
         <hr/>
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact Me</a>
+        <footer id="me">
+            <a href="./public/about.html">About Me</a>
+            <a href="./public/contact.html">Contact Me</a>
+        </footer>
     </body>
 </html>
